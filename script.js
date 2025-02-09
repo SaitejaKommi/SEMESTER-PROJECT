@@ -4,7 +4,7 @@ const userInput = document.getElementById("user-input");
 
 async function fetchGeminiResponse(message) {
     try {
-        const response = await fetch('https://semester-project-2ln5.onrender.com', {
+        const response = await fetch('http://localhost:3030/response', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
